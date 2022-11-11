@@ -1180,19 +1180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Студент\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Студент\\Desktop\\Что то тип курсовой\\Kursa16\\Kursa4\\Kursa4.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\curserwork\\Kursa4\\Kursa4.csproj",
       "projectName": "Kursa4",
-      "projectPath": "C:\\Users\\Студент\\Desktop\\Что то тип курсовой\\Kursa16\\Kursa4\\Kursa4.csproj",
-      "packagesPath": "C:\\Users\\Студент\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Студент\\Desktop\\Что то тип курсовой\\Kursa16\\Kursa4\\obj\\",
+      "projectPath": "C:\\Users\\USER\\Source\\Repos\\curserwork\\Kursa4\\Kursa4.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Source\\Repos\\curserwork\\Kursa4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Студент\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1246,7 +1246,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -50,6 +50,7 @@
             this.login_textbox.Name = "login_textbox";
             this.login_textbox.Size = new System.Drawing.Size(129, 35);
             this.login_textbox.TabIndex = 2;
+            this.login_textbox.TextChanged += new System.EventHandler(this.login_textbox_TextChanged);
             this.login_textbox.Validating += new System.ComponentModel.CancelEventHandler(this.login_textbox_Validating);
             // 
             // password_textbox
@@ -58,6 +59,7 @@
             this.password_textbox.Location = new System.Drawing.Point(386, 153);
             this.password_textbox.Multiline = true;
             this.password_textbox.Name = "password_textbox";
+            this.password_textbox.PasswordChar = '*';
             this.password_textbox.Size = new System.Drawing.Size(129, 35);
             this.password_textbox.TabIndex = 3;
             this.password_textbox.Validating += new System.ComponentModel.CancelEventHandler(this.password_textbox_Validating);
@@ -93,6 +95,7 @@
             this.reg_btn.TabIndex = 7;
             this.reg_btn.Text = "Sign in";
             this.reg_btn.UseVisualStyleBackColor = false;
+            this.reg_btn.Visible = false;
             this.reg_btn.Click += new System.EventHandler(this.reg_btn_Click);
             // 
             // pictureBox2

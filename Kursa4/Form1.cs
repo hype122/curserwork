@@ -14,7 +14,7 @@ namespace Kursa4
 			
         }
 		static public string name;
-
+		static public int id_user;
 		public static bool flag = false;
 		private void enter_btn_Click(object sender, EventArgs e)
 		{
@@ -24,35 +24,34 @@ namespace Kursa4
 
 			Class1 class1 = new Class1();
 
-            class1.openConnection();
-			DataTable table = new DataTable();
-
-			MySqlDataAdapter adapter = new MySqlDataAdapter();
 
 			MySqlCommand comand = new MySqlCommand("SELECT * FROM users WHERE login = @LU AND password = @PU", class1.getConn());
-				comand.Parameters.Add("@LU", MySqlDbType.VarChar).Value = logUser;
-				comand.Parameters.Add("@PU", MySqlDbType.VarChar).Value = passUser;
+			comand.Parameters.Add("@LU", MySqlDbType.VarChar).Value = logUser;
+			comand.Parameters.Add("@PU", MySqlDbType.VarChar).Value = passUser;
 
-			adapter.SelectCommand = comand;
-			adapter.Fill(table);
+            class1.openConnection();
+		
+			MySqlDataReader DR = comand.ExecuteReader();
 
-			if (table.Rows.Count > 0)
+			
+			while (DR.Read())
 			{
-				flag = true;
-				MySqlCommand cmd = new MySqlCommand("SELECT name FROM users WHERE login = @lu", class1.getConn());
-				cmd.Parameters.Add("@lu", MySqlDbType.VarChar).Value = logUser;
-				MySqlDataReader DR = cmd.ExecuteReader();
-				while (DR.Read()) { 
 				
-					name = DR[0].ToString();
-				}
+				id_user = Convert.ToInt32(DR[0]);
+				name = DR[3].ToString();
+
+				flag = true;
+				DR.Close();
 				class1.closeConnection();
-                this.Close();
+				this.Close();
+				
+			
+				
 			}
 
-			else
-				MessageBox.Show("Invalid data");
-
+			MessageBox.Show("Invalid data");
+				
+			class1.closeConnection();
 		}
 
 		private void login_textbox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -87,6 +86,11 @@ namespace Kursa4
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void login_textbox_TextChanged(object sender, EventArgs e)
 		{
 
 		}

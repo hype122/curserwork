@@ -15,7 +15,7 @@ namespace Kursa4
 {
     public class Class1
     {
-        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;user=root;password=pks-199;database=airportnewV2;");
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;user=root;password=pks-199;database=airportnew;");
 
         public void openConnection()
         {

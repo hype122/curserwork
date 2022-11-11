@@ -18,13 +18,13 @@ namespace Kursa4
 			InitializeComponent();
 		}
 
-		static public int trip_seat = 0;
+		
 
 		
 		private void button1_Click(object sender, EventArgs e)
 		{
 			
-				trip_seat++;
+				
 				ticket pen = new ticket();
 				pen.Show();
 			

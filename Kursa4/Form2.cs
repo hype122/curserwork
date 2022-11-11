@@ -11,6 +11,9 @@ using System.Configuration.Provider;
 using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
+using static System.Net.Mime.MediaTypeNames;
+using System.Collections;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace Kursa4
 {
@@ -21,6 +24,7 @@ namespace Kursa4
         {
 
             InitializeComponent();
+            welcome_lbl.Text += Form1.name;
             otkuda.Text = "Казань";
 			kuda.Text = "куда";
 			dateTime_kogda.Text = "Когда";
@@ -41,12 +45,16 @@ namespace Kursa4
 
 			}
 			class1.closeConnection();
-
+            
             kuda.AutoCompleteCustomSource = source_kuda;
 			kuda.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 			kuda.AutoCompleteSource = AutoCompleteSource.CustomSource;
 		}
 
+        int counter = 4;
+        static public int id_passager;
+        static public int selected_id=0;
+        string kuda_txt;
 
         private void Menu_Load(object sender, EventArgs e)
         {
@@ -57,10 +65,6 @@ namespace Kursa4
         {
             
         }
-        static public string trip_kuda = "";
-        static public string trip_otkuda = "";
-        static public string trip_kogda = "";
-        static public string trip_obratno = "";
 
 
         private void kuda_Enter(object sender, EventArgs e)
@@ -70,34 +74,54 @@ namespace Kursa4
 
         private void search_Click(object sender, EventArgs e)
         {
-            if (trip_kuda == "" || trip_otkuda == "" || trip_kogda == "" || trip_obratno == "" || fio_passager == "")
+            
+            if (fio_passager == "")
             {
-                MessageBox.Show("Проверьте данные полета или пассажира");
+                MessageBox.Show("Выберите или зарегистрируйте пассажира");
+                return;
+            }
+            else if(kuda.Text==null || dateTime_kogda.Text == null || dateTime_obratno.Text == null || kuda.Text == "куда" || dateTime_kogda.Text == "Когда" || dateTime_obratno.Text == "Обратно")
+                {
+                MessageBox.Show("Введите рейс правильно");
                 return;
             }
             else
             {
-                trip_kuda = kuda.Text;
-                trip_otkuda = otkuda.Text;
-                trip_kogda = dateTime_kogda.Text;
-                trip_obratno = dateTime_obratno.Text;
-			    MessageBox.Show("Accept");
-			    count_bag men = new count_bag();
-			    men.Show();
+                Class1 class1 = new Class1();
+                class1.openConnection();
+
+                MySqlCommand command = new MySqlCommand("SELECT idtrip FROM trip WHERE kuda=@kd and kogda=@kg and obratno=@ob", class1.getConn());
+                command.Parameters.Add("@kd", MySqlDbType.VarChar).Value = kuda.Text;
+                command.Parameters.Add("@kg", MySqlDbType.VarChar).Value = dateTime_kogda.Text;
+                command.Parameters.Add("@ob", MySqlDbType.VarChar).Value = dateTime_obratno.Text;
+                
+                MySqlDataReader reader = command.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                
+                    selected_id = Convert.ToInt32(reader[0]);
+
+                }
+                reader.Close();
+                if (selected_id==0) { MessageBox.Show("Нет такого рейса"); return;}
+
+                class1.closeConnection();
             }
 
-		}
+        }
        
 
         
 
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
-            trip_grid.Rows.Clear();
-            LoadData();
+            
+            string query = "SELECT * FROM trip";
+            LoadData(query);
         }
 
-        string kuda_txt;
 
         private void search_otkuda_kuda(object sender, EventArgs e)
         {
@@ -177,7 +201,7 @@ namespace Kursa4
 		{
 			string local_name = Form1.name.ToString();
 			name_box_auth.Text = local_name;
-			welcome_lbl.Text += local_name;
+			
 			Class1 class1 = new Class1();
             class1.openConnection();
             MySqlCommand command = new MySqlCommand("SELECT * FROM users WHERE name = @us", class1.getConn());
@@ -195,14 +219,13 @@ namespace Kursa4
             class1.closeConnection();
         }
 
-        private void LoadData()
+        private void LoadData(string query)
         {
+            trip_grid.Rows.Clear();
             Class1 class1 = new Class1();
 
 
             class1.openConnection();
-
-            string query = "SELECT * FROM trip";
 
             MySqlCommand command = new MySqlCommand(query, class1.getConn());
 
@@ -248,10 +271,13 @@ namespace Kursa4
 
             while (DR.Read())
             {
+                id_passager = Convert.ToInt32(DR[0]);
                 search_passport_pass.Text = DR[0].ToString();
                 search_fio_pass.Text = DR[1].ToString();
             }
             class1.closeConnection();
+
+            fio_passager = search_fio_pass.Text;
         }
 
         private void pasport_pass_TextChanged(object sender, EventArgs e)
@@ -271,16 +297,17 @@ namespace Kursa4
 
         private void textBox1_Click(object sender, EventArgs e)//reg_passport_passager
         {
-            
+            reg_passport_passager.Clear();
         }
 
         static public string fio_passager = "";
+
 
         private void reg_btn_passager_Click(object sender, EventArgs e)
         {
             Class1 class1 = new Class1();
             class1.openConnection();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM passager", class1.getConn());
+            MySqlCommand command = new MySqlCommand("SELECT passport FROM passager", class1.getConn());
 
             MySqlDataReader DR = command.ExecuteReader();
 
@@ -289,7 +316,7 @@ namespace Kursa4
                 if (DR[0].ToString() == reg_passport_passager.Text) { MessageBox.Show("Пользователь уже существует"); class1.closeConnection(); return; }
             }
             MySqlCommand cmd = new MySqlCommand("INSERT INTO passager(idpassager, FIO, passport) VALUE (@id, @fio, @pass)", class1.getConn());
-            cmd.Parameters.Add("@id", MySqlDbType.Int64).Value = 4;
+            cmd.Parameters.Add("@id", MySqlDbType.Int64).Value = counter++;
             cmd.Parameters.Add("@fio", MySqlDbType.VarChar).Value = reg_fio_passager.Text;
             cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = reg_passport_passager.Text;
 
@@ -314,6 +341,80 @@ namespace Kursa4
         private void kuda_Click_1(object sender, EventArgs e)
         {
             kuda.Clear();
+        }
+
+        private void reg_passport_passager_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void trip_grid_ColumnStateChanged(object sender, DataGridViewColumnStateChangedEventArgs e)
+        {
+
+        }
+
+        private void btn_grid_search_Click(object sender, EventArgs e)
+        {
+            trip_grid.Rows.Clear();
+            Class1 class1 = new Class1();
+
+
+            class1.openConnection();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM trip WHERE kuda=@kd", class1.getConn());
+            command.Parameters.Add("@kd", MySqlDbType.VarChar).Value = txt_grid_kuda.Text;
+
+            MySqlDataReader reader = command.ExecuteReader();
+
+            List<string[]> data = new List<string[]>();
+
+            while (reader.Read())
+            {
+                data.Add(new string[5]);
+
+                data[data.Count - 1][0] = reader[0].ToString();
+                data[data.Count - 1][1] = reader[1].ToString();
+                data[data.Count - 1][2] = reader[2].ToString();
+                data[data.Count - 1][3] = reader[3].ToString();
+                data[data.Count - 1][4] = reader[4].ToString();
+            }
+
+            reader.Close();
+
+            class1.closeConnection();
+
+            foreach (string[] s in data)
+                trip_grid.Rows.Add(s);
+        }
+
+        private void trip_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void btn_grid_accept_Click(object sender, EventArgs e)
+        {
+            if(fio_passager == "") { MessageBox.Show("Выберите пассажира"); return; }
+            selected_id = Convert.ToInt16(trip_grid[0, trip_grid.CurrentCell.RowIndex].Value);
+            if (selected_id == 0) { MessageBox.Show("Выберите рейс"); return; }
+            else
+            {
+                DialogResult result = MessageBox.Show(
+                    "Выбран рейс номер: " + selected_id.ToString(),
+                    "Сообщение",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1,
+                    MessageBoxOptions.DefaultDesktopOnly);
+
+
+                if (result == DialogResult.Yes)
+                {
+                    count_bag ecemp2 = new count_bag();
+                    ecemp2.Show();
+
+                }
+            }
         }
     }
 }
