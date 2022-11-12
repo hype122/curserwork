@@ -24,6 +24,7 @@ namespace Kursa4
         {
 
             InitializeComponent();
+            this.Activate();
             welcome_lbl.Text += Form1.name;
             otkuda.Text = "Казань";
 			kuda.Text = "куда";
@@ -51,14 +52,13 @@ namespace Kursa4
 			kuda.AutoCompleteSource = AutoCompleteSource.CustomSource;
 		}
 
-        int counter = 4;
+        int choised_id_passager;
         static public int id_passager;
         static public int selected_id=0;
         string kuda_txt;
 
         private void Menu_Load(object sender, EventArgs e)
         {
-			
         }
 
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
@@ -109,6 +109,7 @@ namespace Kursa4
                 class1.closeConnection();
             count_bag bagagge = new count_bag();
             bagagge.Show();
+           
 
         }
        
@@ -235,13 +236,14 @@ namespace Kursa4
 
             while (reader.Read())
             {
-                data.Add(new string[5]);
+                data.Add(new string[6]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
                 data[data.Count - 1][3] = reader[3].ToString();
                 data[data.Count - 1][4] = reader[4].ToString();
+                data[data.Count - 1][5] = reader[7].ToString();
             }
 
             reader.Close();
@@ -306,6 +308,7 @@ namespace Kursa4
 
         private void reg_btn_passager_Click(object sender, EventArgs e)
         {
+            choised_id_passager = 0;
             Class1 class1 = new Class1();
             class1.openConnection();
             MySqlCommand command = new MySqlCommand("SELECT passport FROM passager", class1.getConn());
@@ -316,8 +319,11 @@ namespace Kursa4
             {
                 if (DR[0].ToString() == reg_passport_passager.Text) { MessageBox.Show("Пользователь уже существует"); class1.closeConnection(); return; }
             }
+
+            choise_id_passager();
+
             MySqlCommand cmd = new MySqlCommand("INSERT INTO passager(idpassager, FIO, passport) VALUE (@id, @fio, @pass)", class1.getConn());
-            cmd.Parameters.Add("@id", MySqlDbType.Int64).Value = counter++;
+            cmd.Parameters.Add("@id", MySqlDbType.Int64).Value = choised_id_passager;
             cmd.Parameters.Add("@fio", MySqlDbType.VarChar).Value = reg_fio_passager.Text;
             cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = reg_passport_passager.Text;
 
@@ -326,6 +332,7 @@ namespace Kursa4
 
             if (cmd.ExecuteNonQuery() == 1)
             {
+                id_passager = choised_id_passager;
                 fio_passager = reg_fio_passager.Text;
                 MessageBox.Show("Pass create");
                 
@@ -337,6 +344,26 @@ namespace Kursa4
 
 
             class1.closeConnection();
+        }
+
+        private void choise_id_passager()
+        {
+            Class1 class1 = new Class1();
+            class1.openConnection();
+            MySqlCommand command = new MySqlCommand("SELECT COUNT(idpassager) FROM passager", class1.getConn());
+
+            MySqlDataReader DR = command.ExecuteReader();
+
+            while (DR.Read())
+            {
+                choised_id_passager = Convert.ToInt32(DR[0]) + 1;
+            }
+           
+
+            DR.Close();
+
+            class1.closeConnection();
+
         }
 
         private void kuda_Click_1(object sender, EventArgs e)
@@ -377,13 +404,14 @@ namespace Kursa4
                 List<string[]> data = new List<string[]>();
                 while (reader.Read())
                 {
-                    data.Add(new string[5]);
+                    data.Add(new string[6]);
 
                     data[data.Count - 1][0] = reader[0].ToString();
                     data[data.Count - 1][1] = reader[1].ToString();
                     data[data.Count - 1][2] = reader[2].ToString();
                     data[data.Count - 1][3] = reader[3].ToString();
                     data[data.Count - 1][4] = reader[4].ToString();
+                    data[data.Count - 1][5] = reader[7].ToString();
                 }
                 reader.Close();
 				foreach (string[] s in data)
@@ -455,6 +483,11 @@ namespace Kursa4
         private void btn_choise_passager_Click(object sender, EventArgs e)
         {
             fio_passager = search_fio_pass.Text;
+            id_passager = Convert.ToInt32(search_passport_pass.Text);
+        }
+
+        private void search_passport_pass_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -19,6 +19,7 @@ namespace Kursa4
         public ticket()
         {
             InitializeComponent();
+            this.Activate();
         }
 
         int seats_plane = 0;
@@ -96,9 +97,29 @@ namespace Kursa4
                 txt_kogda_tic.Text = reader[3].ToString();
                 txt_obratno_tic.Text = reader[4].ToString();
                 txt_gate_tic.Text = reader[6].ToString();
-                txt_users_tic.Text = Form1.id_user.ToString();
             }
+            select_name_surname_users();
             reader.Close();
+
+            class1.closeConnection();
+        }
+
+        private void select_name_surname_users()
+        {
+            Class1 class1 = new Class1();
+            class1.openConnection();
+            MySqlCommand command = new MySqlCommand("SELECT name, surname FROM users WHERE idusers = @id ", class1.getConn());
+            command.Parameters.Add("@id", MySqlDbType.Int64).Value = Form1.id_user;
+
+            MySqlDataReader DR = command.ExecuteReader();
+
+            while (DR.Read())
+            {
+                txt_users_tic.Text = DR[1].ToString() + " " + DR[0].ToString();
+                
+            }
+
+            DR.Close();
 
             class1.closeConnection();
         }
@@ -169,13 +190,14 @@ namespace Kursa4
 
 
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO ticket (id_tic, passager, user, trip, seat) VALUES (@id, @passager, @user,@trip,@seat)", class1.getConn());
+            MySqlCommand command = new MySqlCommand("INSERT INTO ticket (id_tic, passager, user, trip, seat, baggage) VALUES (@id, @passager, @user,@trip,@seat,@baggage)", class1.getConn());
 
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id_tickets;
             command.Parameters.Add("@passager", MySqlDbType.Int32).Value = Menu.id_passager;
             command.Parameters.Add("@user", MySqlDbType.Int32).Value = Form1.id_user;
             command.Parameters.Add("@trip", MySqlDbType.Int32).Value = Menu.selected_id;
             command.Parameters.Add("@seat", MySqlDbType.Int32).Value = txt_seat_tic.Text;
+            command.Parameters.Add("@baggage", MySqlDbType.Int32).Value = count_bag.choised_id_baggage;
 
             class1.openConnection();
 

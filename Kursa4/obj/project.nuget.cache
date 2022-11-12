@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yg812CeTVKYzAEO9IJqdAk5ub0qfC82TLQCnoZIWtANIaZqR5BZFvQm0ABiuU64x/WxXWPKanZTWmkUmuDMvWw==",
+  "dgSpecHash": "LUQnDthqt7tLVrt6hdko6onWrlcVS/+Zj0yQ1SsBoucq/mvV0ltKuwRi8s1R0mq1Xv/AoiAjFtMyTTx4/bMYyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\curserwork12.11dom\\Kursa4\\Kursa4.csproj",
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\13.11 price\\Kursa4\\Kursa4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

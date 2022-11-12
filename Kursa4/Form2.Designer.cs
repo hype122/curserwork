@@ -35,6 +35,7 @@ namespace Kursa4
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.search = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -68,7 +69,9 @@ namespace Kursa4
             this.kuda_grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kogda_grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.obratno_grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profile_page = new System.Windows.Forms.TabPage();
+            this.exit_btn = new System.Windows.Forms.Button();
             this.phone_lbl = new System.Windows.Forms.Label();
             this.surname_lbl = new System.Windows.Forms.Label();
             this.name_lbl = new System.Windows.Forms.Label();
@@ -79,7 +82,6 @@ namespace Kursa4
             this.name_box_auth = new System.Windows.Forms.TextBox();
             this.login_box_auth = new System.Windows.Forms.TextBox();
             this.surname_box_auth = new System.Windows.Forms.TextBox();
-            this.exit_btn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.passagers.SuspendLayout();
             this.reg_pass_panel.SuspendLayout();
@@ -248,6 +250,7 @@ namespace Kursa4
             this.search_passport_pass.ReadOnly = true;
             this.search_passport_pass.Size = new System.Drawing.Size(165, 23);
             this.search_passport_pass.TabIndex = 2;
+            this.search_passport_pass.TextChanged += new System.EventHandler(this.search_passport_pass_TextChanged);
             // 
             // search_page
             // 
@@ -373,7 +376,8 @@ namespace Kursa4
             this.otkuda_grid,
             this.kuda_grid,
             this.kogda_grid,
-            this.obratno_grid});
+            this.obratno_grid,
+            this.price});
             this.trip_grid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.trip_grid.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.trip_grid.Location = new System.Drawing.Point(0, 70);
@@ -427,6 +431,14 @@ namespace Kursa4
             this.obratno_grid.Name = "obratno_grid";
             this.obratno_grid.ReadOnly = true;
             // 
+            // price
+            // 
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.price.DefaultCellStyle = dataGridViewCellStyle6;
+            this.price.HeaderText = "Цена";
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            // 
             // profile_page
             // 
             this.profile_page.Controls.Add(this.exit_btn);
@@ -448,6 +460,17 @@ namespace Kursa4
             this.profile_page.Text = "Профиль";
             this.profile_page.UseVisualStyleBackColor = true;
             this.profile_page.Enter += new System.EventHandler(this.profile_Enter);
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.BackColor = System.Drawing.Color.Transparent;
+            this.exit_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exit_btn.Location = new System.Drawing.Point(339, 267);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(75, 23);
+            this.exit_btn.TabIndex = 12;
+            this.exit_btn.Text = "Выйти";
+            this.exit_btn.UseVisualStyleBackColor = false;
             // 
             // phone_lbl
             // 
@@ -542,17 +565,6 @@ namespace Kursa4
             this.surname_box_auth.Size = new System.Drawing.Size(100, 23);
             this.surname_box_auth.TabIndex = 0;
             // 
-            // exit_btn
-            // 
-            this.exit_btn.BackColor = System.Drawing.Color.Transparent;
-            this.exit_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.exit_btn.Location = new System.Drawing.Point(339, 267);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(75, 23);
-            this.exit_btn.TabIndex = 12;
-            this.exit_btn.Text = "Выйти";
-            this.exit_btn.UseVisualStyleBackColor = false;
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -587,8 +599,6 @@ namespace Kursa4
         private TabControl tabControl1;
         private TabPage search_page;
         private TabPage profile_page;
-        private TextBox surname_box_auth;
-        private TextBox name_box_auth;
         private TextBox login_box_auth;
         private TextBox phone_box_auth;
 		private TabPage trip_page;
@@ -613,11 +623,6 @@ namespace Kursa4
         private TextBox search_passport_pass;
         private TextBox reg_fio_passager;
         private Button reg_btn_passager;
-        private DataGridViewTextBoxColumn id_grid;
-        private DataGridViewTextBoxColumn otkuda_grid;
-        private DataGridViewTextBoxColumn kuda_grid;
-        private DataGridViewTextBoxColumn kogda_grid;
-        private DataGridViewTextBoxColumn obratno_grid;
         private MaskedTextBox pasport_pass;
         private MaskedTextBox reg_passport_passager;
         private TextBox txt_grid_kuda;
@@ -627,5 +632,13 @@ namespace Kursa4
 		private Label lbl_search_city;
 		private Label label1;
 		private Button exit_btn;
-	}
+        private TextBox surname_box_auth;
+        private TextBox name_box_auth;
+        private DataGridViewTextBoxColumn id_grid;
+        private DataGridViewTextBoxColumn otkuda_grid;
+        private DataGridViewTextBoxColumn kuda_grid;
+        private DataGridViewTextBoxColumn kogda_grid;
+        private DataGridViewTextBoxColumn obratno_grid;
+        private DataGridViewTextBoxColumn price;
+    }
 }
