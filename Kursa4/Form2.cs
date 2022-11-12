@@ -85,8 +85,7 @@ namespace Kursa4
                 MessageBox.Show("Введите рейс правильно");
                 return;
             }
-            else
-            {
+            
                 Class1 class1 = new Class1();
                 class1.openConnection();
 
@@ -105,10 +104,11 @@ namespace Kursa4
 
                 }
                 reader.Close();
-                if (selected_id==0) { MessageBox.Show("Нет такого рейса"); return;}
+                if (selected_id==0) { MessageBox.Show("Нет такого рейса"); kuda.Clear();dateTime_kogda.Clear(); dateTime_obratno.Clear(); return;}
 
                 class1.closeConnection();
-            }
+            count_bag bagagge = new count_bag();
+            bagagge.Show();
 
         }
        
@@ -118,8 +118,8 @@ namespace Kursa4
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             
-            string query = "SELECT * FROM trip";
-            LoadData(query);
+            
+            LoadData();
         }
 
 
@@ -219,7 +219,7 @@ namespace Kursa4
             class1.closeConnection();
         }
 
-        private void LoadData(string query)
+        private void LoadData()
         {
             trip_grid.Rows.Clear();
             Class1 class1 = new Class1();
@@ -227,7 +227,7 @@ namespace Kursa4
 
             class1.openConnection();
 
-            MySqlCommand command = new MySqlCommand(query, class1.getConn());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM trip", class1.getConn());
 
             MySqlDataReader reader = command.ExecuteReader();
 
@@ -259,7 +259,9 @@ namespace Kursa4
 
         private void search_passager_Click(object sender, EventArgs e)
         {
-        
+            search_passport_pass.Clear();
+            search_fio_pass.Clear();
+
             Class1 class1 = new Class1();
             class1.openConnection();
             MySqlCommand command = new MySqlCommand("SELECT * FROM passager WHERE passport = @passport", class1.getConn());
@@ -277,7 +279,6 @@ namespace Kursa4
             }
             class1.closeConnection();
 
-            fio_passager = search_fio_pass.Text;
         }
 
         private void pasport_pass_TextChanged(object sender, EventArgs e)
@@ -355,36 +356,44 @@ namespace Kursa4
 
         private void btn_grid_search_Click(object sender, EventArgs e)
         {
+            
             trip_grid.Rows.Clear();
             Class1 class1 = new Class1();
 
 
             class1.openConnection();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM trip WHERE kuda=@kd", class1.getConn());
-            command.Parameters.Add("@kd", MySqlDbType.VarChar).Value = txt_grid_kuda.Text;
-
-            MySqlDataReader reader = command.ExecuteReader();
-
-            List<string[]> data = new List<string[]>();
-
-            while (reader.Read())
+            if (String.IsNullOrEmpty(btn_grid_search.Text)){
+                MessageBox.Show("Tyt");
+                LoadData();
+			}
+            else
             {
-                data.Add(new string[5]);
+                MySqlCommand command = new MySqlCommand("SELECT * FROM trip WHERE kuda=@kd", class1.getConn());
+                command.Parameters.Add("@kd", MySqlDbType.VarChar).Value = txt_grid_kuda.Text;
 
-                data[data.Count - 1][0] = reader[0].ToString();
-                data[data.Count - 1][1] = reader[1].ToString();
-                data[data.Count - 1][2] = reader[2].ToString();
-                data[data.Count - 1][3] = reader[3].ToString();
-                data[data.Count - 1][4] = reader[4].ToString();
-            }
+                MySqlDataReader reader = command.ExecuteReader();
 
-            reader.Close();
+                List<string[]> data = new List<string[]>();
+                while (reader.Read())
+                {
+                    data.Add(new string[5]);
+
+                    data[data.Count - 1][0] = reader[0].ToString();
+                    data[data.Count - 1][1] = reader[1].ToString();
+                    data[data.Count - 1][2] = reader[2].ToString();
+                    data[data.Count - 1][3] = reader[3].ToString();
+                    data[data.Count - 1][4] = reader[4].ToString();
+                }
+                reader.Close();
+				foreach (string[] s in data)
+					trip_grid.Rows.Add(s);
+			}
+            
 
             class1.closeConnection();
 
-            foreach (string[] s in data)
-                trip_grid.Rows.Add(s);
+            
         }
 
         private void trip_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -395,7 +404,13 @@ namespace Kursa4
         private void btn_grid_accept_Click(object sender, EventArgs e)
         {
             if(fio_passager == "") { MessageBox.Show("Выберите пассажира"); return; }
-            selected_id = Convert.ToInt16(trip_grid[0, trip_grid.CurrentCell.RowIndex].Value);
+            if (trip_grid.CurrentRow is null)
+            {
+                MessageBox.Show("Не выбрана рейс");
+
+                return;
+            }
+			selected_id = Convert.ToInt16(trip_grid[0, trip_grid.CurrentCell.RowIndex].Value);
             if (selected_id == 0) { MessageBox.Show("Выберите рейс"); return; }
             else
             {
@@ -415,6 +430,32 @@ namespace Kursa4
 
                 }
             }
+        }
+
+        private void reg_fio_passager_Leave(object sender, EventArgs e)
+        {
+            if (reg_fio_passager.Text.Length < 1 ) { reg_fio_passager.Text = "Введине ФИО"; }
+        }
+
+        private void dateTime_kogda_Leave(object sender, EventArgs e)
+        {
+            if (dateTime_kogda.Text.Length < 1) { dateTime_kogda.Text = "Когда"; }
+        }
+
+        private void dateTime_obratno_Leave(object sender, EventArgs e)
+        {
+            if (dateTime_obratno.Text.Length < 1) { dateTime_obratno.Text = "Обратно"; }
+        }
+
+        private void kuda_Leave(object sender, EventArgs e)
+        {
+            if (kuda.Text.Length < 1) { kuda.Text = "Куда"; }
+        }
+
+        private void btn_choise_passager_Click(object sender, EventArgs e)
+        {
+            fio_passager = search_fio_pass.Text;
+
         }
     }
 }

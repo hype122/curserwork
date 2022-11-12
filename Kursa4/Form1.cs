@@ -13,45 +13,48 @@ namespace Kursa4
 			InitializeComponent();
 			
         }
-		static public string name;
+		static public string name = "";
 		static public int id_user;
 		public static bool flag = false;
 		private void enter_btn_Click(object sender, EventArgs e)
 		{
+			
 
 			string logUser = login_textbox.Text;
 			string passUser = password_textbox.Text;
 
 			Class1 class1 = new Class1();
 
+			DataTable table = new DataTable();
 
+			MySqlDataAdapter adapter = new MySqlDataAdapter();
+			
 			MySqlCommand comand = new MySqlCommand("SELECT * FROM users WHERE login = @LU AND password = @PU", class1.getConn());
 			comand.Parameters.Add("@LU", MySqlDbType.VarChar).Value = logUser;
 			comand.Parameters.Add("@PU", MySqlDbType.VarChar).Value = passUser;
 
             class1.openConnection();
-		
-			MySqlDataReader DR = comand.ExecuteReader();
 
+			MySqlDataReader DR = comand.ExecuteReader();
+			
 			
 			while (DR.Read())
 			{
 				
 				id_user = Convert.ToInt32(DR[0]);
 				name = DR[3].ToString();
-
+				break;
+			}
+			if (name != "") {
 				flag = true;
 				DR.Close();
 				class1.closeConnection();
 				this.Close();
-				
-			
-				
 			}
-
 			MessageBox.Show("Invalid data");
 				
 			class1.closeConnection();
+
 		}
 
 		private void login_textbox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
