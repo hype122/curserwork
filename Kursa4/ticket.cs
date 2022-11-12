@@ -28,16 +28,16 @@ namespace Kursa4
         private void ticket_Load(object sender, EventArgs e)
         {
             name_tic_txt.Text = Menu.fio_passager;
-            name_tic_lbl.BackColor = Color.Transparent; name_tic_lbl.ForeColor = Color.Transparent;
-            lbl_aviacompany.BackColor = Color.Transparent; lbl_aviacompany.ForeColor = Color.Transparent;
-            lbl_gate.BackColor = Color.Transparent; lbl_gate.ForeColor = Color.Transparent;
-            lbl_seat.BackColor = Color.Transparent; lbl_seat.ForeColor = Color.Transparent;
-            kuda_tic_lbl.BackColor = Color.Transparent; kuda_tic_lbl.ForeColor= Color.Transparent;
-            obratno_tic_lbl.BackColor = Color.Transparent; obratno_tic_lbl.ForeColor = Color.Transparent;
-            otkuda_tic_lbl.BackColor = Color.Transparent; otkuda_tic_lbl.ForeColor = Color.Transparent;
-            Когда.BackColor = Color.Transparent; Когда.ForeColor = Color.Transparent;
-
-
+            name_tic_lbl.BackColor = Color.Transparent; //name_tic_lbl.ForeColor = Color.Transparent;
+            lbl_aviacompany.BackColor = Color.Transparent; //lbl_aviacompany.ForeColor = Color.Transparent;
+            lbl_gate.BackColor = Color.Transparent; //lbl_gate.ForeColor = Color.Transparent;
+            lbl_seat.BackColor = Color.Transparent; //lbl_seat.ForeColor = Color.Transparent;
+            kuda_tic_lbl.BackColor = Color.Transparent; //kuda_tic_lbl.ForeColor= Color.Transparent;
+            obratno_tic_lbl.BackColor = Color.Transparent; //obratno_tic_lbl.ForeColor = Color.Transparent;
+            otkuda_tic_lbl.BackColor = Color.Transparent; //otkuda_tic_lbl.ForeColor = Color.Transparent;
+            Когда.BackColor = Color.Transparent; //Когда.ForeColor = Color.Transparent;
+            lbl_users_tic.BackColor = Color.Transparent; //lbl_users_tic.ForeColor = Color.Transparent;
+            
 			trip_data();// получаемя данные рейса
             plane_avia_and_seatsCount();// получаем данные авиакопаний и места
             choice_seat();// выбираем место и в форму заносим
@@ -220,40 +220,41 @@ namespace Kursa4
                 txt_seat_tic.Clear();
                 txt_users_tic.Clear();
                 txt_aviacompany_tic.Clear();
+                this.Close();
 			}
 		}
 
         private void btn_send_email_Click(object sender, EventArgs e)
         {
             insert_ticket();
-			
-			var ctrl = this;
-			Bitmap bmp = new Bitmap(ctrl.Width, ctrl.Height);
-			ctrl.DrawToBitmap(bmp, new Rectangle(Point.Empty, bmp.Size));
-			
+            btn_otmena.Hide();
+            btn_send_email.Hide();
 
-				// отправитель - устанавливаем адрес и отображаемое в письме имя
-				MailAddress from = new MailAddress("alfred5655565556@gmail.com", "Tom");
-				// кому отправляем
-				MailAddress to = new MailAddress("sosupenis2010@gmail.com");
-				// создаем объект сообщения
-				MailMessage m = new MailMessage(from, to);
-			// тема письма
-			    m.Attachments.Add(new Attachment("D://temlog.txt"));
-			    m.Subject = "";
-				// текст письма
-				m.Body = "<h2>Письмо-тест работы smtp-клиента</h2>";
-				// письмо представляет код html
-				m.IsBodyHtml = true;
-				// адрес smtp-сервера и порт, с которого будем отправлять письмо
-				SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-				// логин и пароль
-				smtp.Credentials = new NetworkCredential("sosupenis@gmail.com", "Alfred2003");
-				smtp.EnableSsl = true;
-				smtp.Send(m);
-				Console.Read();
+            var ctrl = this;
+            Bitmap bmp1 = new Bitmap(ctrl.Width, ctrl.Height);
+            ctrl.DrawToBitmap(bmp1, new Rectangle(Point.Empty, bmp1.Size));
+            bmp1.Save(@"C:\Users\USER\Pictures\email_tic\"+Menu.fio_passager+".png", System.Drawing.Imaging.ImageFormat.Png);
+            pictureBox1.Image = bmp1;
+            print();
 
+            this.Close();
+        }
 
-		}
+        public void print()
+        {
+            System.Drawing.Printing.PrintDocument Document = new System.Drawing.Printing.PrintDocument();
+            Document.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(Document_PrintPage);
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                Document.Print();
+            }
+        }
+        void Document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(new Bitmap(@"C:\Users\USER\Pictures\email_tic\tic1"+Menu.fio_passager+".png"), new Point(0, 0)); //Картинка на печать
+        }
+
     }
 }
+
