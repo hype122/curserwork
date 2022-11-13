@@ -282,3 +282,4 @@ C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\refint\Ku
 C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
 C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
 C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\source\repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form_for_manager.resources

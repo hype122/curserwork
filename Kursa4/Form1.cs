@@ -13,6 +13,7 @@ namespace Kursa4
 			InitializeComponent();
 			
         }
+		static public string post;
 		static public string name = "";
 		static public int id_user;
 		public static bool flag = false;
@@ -43,9 +44,19 @@ namespace Kursa4
 				
 				id_user = Convert.ToInt32(DR[0]);
 				name = DR[3].ToString();
+				post = DR[6].ToString();
 				break;
 			}
-			if (name != "") {
+			
+			if(post == "менеджер")
+			{
+				Form_for_manager form = new Form_for_manager();
+				form.Show();
+				DR.Close();
+				class1.closeConnection();
+				this.Close();
+			}
+			if (post == "кассир") {
 				flag = true;
 				DR.Close();
 				class1.closeConnection();

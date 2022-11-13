@@ -15,7 +15,8 @@ namespace Kursa4
 			ApplicationConfiguration.Initialize();
 			
             Application.Run(new Form1());
-            if (Form1.flag == true) { Application.Run(new Menu()); }
+			if(Form1.post == "менеджер") { Application.Run(new Form_for_manager()); }
+            if (Form1.post == "кассир") { Application.Run(new Menu()); }
 				
 			
 			

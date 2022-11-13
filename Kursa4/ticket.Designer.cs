@@ -61,7 +61,7 @@
             // name_tic_lbl
             // 
             this.name_tic_lbl.AutoSize = true;
-            this.name_tic_lbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.name_tic_lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.name_tic_lbl.Location = new System.Drawing.Point(42, 205);
             this.name_tic_lbl.Name = "name_tic_lbl";
             this.name_tic_lbl.Size = new System.Drawing.Size(94, 15);
