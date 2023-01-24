@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+
+button{
+    border: none;
+    outline: none;
+    width: 140px;
+    height: 40px;
+    transition: 0.4s ease;
+    background-color: #ce9f11;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ffc000;
+    box-shadow: 0 0 5px #ffc000,0 0 20px #ffc000,0 0 60px #ffc000,0 0 120px #ffc000
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
