@@ -34,9 +34,9 @@
             this.password_textbox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.enter_btn = new System.Windows.Forms.Button();
-            this.reg_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.reg_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -86,18 +86,6 @@
             this.enter_btn.UseVisualStyleBackColor = false;
             this.enter_btn.Click += new System.EventHandler(this.enter_btn_Click);
             // 
-            // reg_btn
-            // 
-            this.reg_btn.BackColor = System.Drawing.Color.Gainsboro;
-            this.reg_btn.Location = new System.Drawing.Point(352, 273);
-            this.reg_btn.Name = "reg_btn";
-            this.reg_btn.Size = new System.Drawing.Size(100, 26);
-            this.reg_btn.TabIndex = 7;
-            this.reg_btn.Text = "Sign in";
-            this.reg_btn.UseVisualStyleBackColor = false;
-            this.reg_btn.Visible = false;
-            this.reg_btn.Click += new System.EventHandler(this.reg_btn_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -111,7 +99,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(314, 96);
             this.pictureBox3.Name = "pictureBox3";
@@ -119,6 +107,18 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
+            // 
+            // reg_btn
+            // 
+            this.reg_btn.BackColor = System.Drawing.Color.Gainsboro;
+            this.reg_btn.Location = new System.Drawing.Point(352, 273);
+            this.reg_btn.Name = "reg_btn";
+            this.reg_btn.Size = new System.Drawing.Size(100, 26);
+            this.reg_btn.TabIndex = 7;
+            this.reg_btn.Text = "Sign in";
+            this.reg_btn.UseVisualStyleBackColor = false;
+            this.reg_btn.Visible = false;
+            this.reg_btn.Click += new System.EventHandler(this.reg_btn_Click);
             // 
             // Form1
             // 
@@ -153,8 +153,8 @@
 		private TextBox password_textbox;
 		private ErrorProvider errorProvider1;
 		private Button enter_btn;
-		private Button reg_btn;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-    }
+		private Button reg_btn;
+	}
 }

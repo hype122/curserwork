@@ -48,14 +48,21 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_otmena = new System.Windows.Forms.Button();
+            this.btn_send_email = new System.Windows.Forms.Button();
+            this.lbl_users_tic = new System.Windows.Forms.Label();
+            this.txt_users_tic = new System.Windows.Forms.TextBox();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // name_tic_lbl
             // 
             this.name_tic_lbl.AutoSize = true;
-            this.name_tic_lbl.Location = new System.Drawing.Point(42, 200);
+            this.name_tic_lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.name_tic_lbl.Location = new System.Drawing.Point(42, 205);
             this.name_tic_lbl.Name = "name_tic_lbl";
             this.name_tic_lbl.Size = new System.Drawing.Size(94, 15);
             this.name_tic_lbl.TabIndex = 0;
@@ -67,8 +74,9 @@
             this.name_tic_txt.Location = new System.Drawing.Point(142, 197);
             this.name_tic_txt.Name = "name_tic_txt";
             this.name_tic_txt.ReadOnly = true;
-            this.name_tic_txt.Size = new System.Drawing.Size(144, 23);
+            this.name_tic_txt.Size = new System.Drawing.Size(170, 23);
             this.name_tic_txt.TabIndex = 5;
+            this.name_tic_txt.TextChanged += new System.EventHandler(this.name_tic_txt_TextChanged);
             // 
             // otkuda_tic_lbl
             // 
@@ -91,7 +99,7 @@
             // Когда
             // 
             this.Когда.AutoSize = true;
-            this.Когда.Location = new System.Drawing.Point(323, 200);
+            this.Когда.Location = new System.Drawing.Point(333, 205);
             this.Когда.Name = "Когда";
             this.Когда.Size = new System.Drawing.Size(38, 15);
             this.Когда.TabIndex = 8;
@@ -100,7 +108,7 @@
             // obratno_tic_lbl
             // 
             this.obratno_tic_lbl.AutoSize = true;
-            this.obratno_tic_lbl.Location = new System.Drawing.Point(631, 280);
+            this.obratno_tic_lbl.Location = new System.Drawing.Point(623, 205);
             this.obratno_tic_lbl.Name = "obratno_tic_lbl";
             this.obratno_tic_lbl.Size = new System.Drawing.Size(55, 15);
             this.obratno_tic_lbl.TabIndex = 9;
@@ -132,7 +140,7 @@
             // 
             // txt_obratno_tic
             // 
-            this.txt_obratno_tic.Location = new System.Drawing.Point(717, 277);
+            this.txt_obratno_tic.Location = new System.Drawing.Point(717, 197);
             this.txt_obratno_tic.Name = "txt_obratno_tic";
             this.txt_obratno_tic.ReadOnly = true;
             this.txt_obratno_tic.Size = new System.Drawing.Size(144, 23);
@@ -156,7 +164,7 @@
             // 
             // txt_gate_tic
             // 
-            this.txt_gate_tic.Location = new System.Drawing.Point(717, 351);
+            this.txt_gate_tic.Location = new System.Drawing.Point(717, 272);
             this.txt_gate_tic.Name = "txt_gate_tic";
             this.txt_gate_tic.Size = new System.Drawing.Size(144, 23);
             this.txt_gate_tic.TabIndex = 16;
@@ -182,7 +190,7 @@
             // lbl_gate
             // 
             this.lbl_gate.AutoSize = true;
-            this.lbl_gate.Location = new System.Drawing.Point(631, 354);
+            this.lbl_gate.Location = new System.Drawing.Point(623, 280);
             this.lbl_gate.Name = "lbl_gate";
             this.lbl_gate.Size = new System.Drawing.Size(47, 15);
             this.lbl_gate.TabIndex = 19;
@@ -212,19 +220,66 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Controls.Add(this.btn_otmena);
+            this.panel2.Controls.Add(this.btn_send_email);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 433);
+            this.panel2.Location = new System.Drawing.Point(0, 425);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 28);
+            this.panel2.Size = new System.Drawing.Size(984, 36);
             this.panel2.TabIndex = 23;
+            // 
+            // btn_otmena
+            // 
+            this.btn_otmena.Location = new System.Drawing.Point(845, 10);
+            this.btn_otmena.Name = "btn_otmena";
+            this.btn_otmena.Size = new System.Drawing.Size(75, 23);
+            this.btn_otmena.TabIndex = 1;
+            this.btn_otmena.Text = "Отмена";
+            this.btn_otmena.UseVisualStyleBackColor = true;
+            this.btn_otmena.Click += new System.EventHandler(this.btn_otmena_Click);
+            // 
+            // btn_send_email
+            // 
+            this.btn_send_email.Location = new System.Drawing.Point(749, 10);
+            this.btn_send_email.Name = "btn_send_email";
+            this.btn_send_email.Size = new System.Drawing.Size(90, 23);
+            this.btn_send_email.TabIndex = 0;
+            this.btn_send_email.Text = "Распечатать";
+            this.btn_send_email.UseVisualStyleBackColor = true;
+            this.btn_send_email.Click += new System.EventHandler(this.btn_send_email_Click);
+            // 
+            // lbl_users_tic
+            // 
+            this.lbl_users_tic.AutoSize = true;
+            this.lbl_users_tic.Location = new System.Drawing.Point(623, 354);
+            this.lbl_users_tic.Name = "lbl_users_tic";
+            this.lbl_users_tic.Size = new System.Drawing.Size(46, 15);
+            this.lbl_users_tic.TabIndex = 24;
+            this.lbl_users_tic.Text = "Кассир";
+            // 
+            // txt_users_tic
+            // 
+            this.txt_users_tic.Location = new System.Drawing.Point(717, 346);
+            this.txt_users_tic.Name = "txt_users_tic";
+            this.txt_users_tic.ReadOnly = true;
+            this.txt_users_tic.Size = new System.Drawing.Size(144, 23);
+            this.txt_users_tic.TabIndex = 25;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
             // 
             // ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AcceptButton = this.btn_send_email;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CancelButton = this.btn_otmena;
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.ControlBox = false;
+            this.Controls.Add(this.txt_users_tic);
+            this.Controls.Add(this.lbl_users_tic);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_gate);
@@ -243,12 +298,15 @@
             this.Controls.Add(this.otkuda_tic_lbl);
             this.Controls.Add(this.name_tic_txt);
             this.Controls.Add(this.name_tic_lbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ticket";
+            this.ShowInTaskbar = false;
             this.Text = "ticket";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ticket_FormClosed);
             this.Load += new System.EventHandler(this.ticket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,5 +333,10 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private Panel panel2;
-    }
+		private Button btn_otmena;
+		private Button btn_send_email;
+		private Label lbl_users_tic;
+		private TextBox txt_users_tic;
+		private PrintDialog printDialog1;
+	}
 }

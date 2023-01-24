@@ -6,6 +6,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +19,7 @@ namespace Kursa4
         public ticket()
         {
             InitializeComponent();
+            this.Activate();
         }
 
         int seats_plane = 0;
@@ -26,13 +29,20 @@ namespace Kursa4
         private void ticket_Load(object sender, EventArgs e)
         {
             name_tic_txt.Text = Menu.fio_passager;
-            name_tic_lbl.BackColor = Color.Transparent; name_tic_lbl.ForeColor = Color.Transparent; 
-
+            name_tic_lbl.BackColor = Color.Transparent; //name_tic_lbl.ForeColor = Color.Transparent;
+            lbl_aviacompany.BackColor = Color.Transparent; //lbl_aviacompany.ForeColor = Color.Transparent;
+            lbl_gate.BackColor = Color.Transparent; //lbl_gate.ForeColor = Color.Transparent;
+            lbl_seat.BackColor = Color.Transparent; //lbl_seat.ForeColor = Color.Transparent;
+            kuda_tic_lbl.BackColor = Color.Transparent; //kuda_tic_lbl.ForeColor= Color.Transparent;
+            obratno_tic_lbl.BackColor = Color.Transparent; //obratno_tic_lbl.ForeColor = Color.Transparent;
+            otkuda_tic_lbl.BackColor = Color.Transparent; //otkuda_tic_lbl.ForeColor = Color.Transparent;
+            Когда.BackColor = Color.Transparent; //Когда.ForeColor = Color.Transparent;
+            lbl_users_tic.BackColor = Color.Transparent; //lbl_users_tic.ForeColor = Color.Transparent;
             
-            trip_data();// получаемя данные рейса
+			trip_data();// получаемя данные рейса
             plane_avia_and_seatsCount();// получаем данные авиакопаний и места
             choice_seat();// выбираем место и в форму заносим
-
+            choice_id();
             
         }
 
@@ -87,9 +97,29 @@ namespace Kursa4
                 txt_kogda_tic.Text = reader[3].ToString();
                 txt_obratno_tic.Text = reader[4].ToString();
                 txt_gate_tic.Text = reader[6].ToString();
-
             }
+            select_name_surname_users();
             reader.Close();
+
+            class1.closeConnection();
+        }
+
+        private void select_name_surname_users()
+        {
+            Class1 class1 = new Class1();
+            class1.openConnection();
+            MySqlCommand command = new MySqlCommand("SELECT name, surname FROM users WHERE idusers = @id ", class1.getConn());
+            command.Parameters.Add("@id", MySqlDbType.Int64).Value = Form1.id_user;
+
+            MySqlDataReader DR = command.ExecuteReader();
+
+            while (DR.Read())
+            {
+                txt_users_tic.Text = DR[1].ToString() + " " + DR[0].ToString();
+                
+            }
+
+            DR.Close();
 
             class1.closeConnection();
         }
@@ -145,10 +175,6 @@ namespace Kursa4
         /// Заносим тикет в бд
         private void ticket_FormClosed(object sender, FormClosedEventArgs e)
         {
-            choice_id();// получаем айди
-
-            insert_ticket();
-
             MessageBox.Show("Thanks");
             Menu.fio_passager = "";
             Menu.selected_id = 0;
@@ -158,17 +184,20 @@ namespace Kursa4
         //заносим в таблицу тикет
         private void insert_ticket()
         {
+            if (Menu.fio_passager=="" || Menu.selected_id == 0) { MessageBox.Show("Неверные данне");return; }
+
             Class1 class1 = new Class1();
 
 
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO ticket (id_tic, passager, user, trip, seat) VALUES (@id, @passager, @user,@trip,@seat)", class1.getConn());
+            MySqlCommand command = new MySqlCommand("INSERT INTO ticket (id_tic, passager, user, trip, seat, baggage) VALUES (@id, @passager, @user,@trip,@seat,@baggage)", class1.getConn());
 
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id_tickets;
             command.Parameters.Add("@passager", MySqlDbType.Int32).Value = Menu.id_passager;
             command.Parameters.Add("@user", MySqlDbType.Int32).Value = Form1.id_user;
             command.Parameters.Add("@trip", MySqlDbType.Int32).Value = Menu.selected_id;
             command.Parameters.Add("@seat", MySqlDbType.Int32).Value = txt_seat_tic.Text;
+            command.Parameters.Add("@baggage", MySqlDbType.Int32).Value = count_bag.choised_id_baggage;
 
             class1.openConnection();
 
@@ -182,5 +211,72 @@ namespace Kursa4
 
             class1.closeConnection();
         }
+
+        private void name_tic_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_otmena_Click(object sender, EventArgs e)
+        {
+			DialogResult result = MessageBox.Show(
+					"Вы уверены что хотите отменить",
+					"Сообщение",
+					MessageBoxButtons.YesNo,
+					MessageBoxIcon.Information,
+					MessageBoxDefaultButton.Button1,
+					MessageBoxOptions.DefaultDesktopOnly);
+
+
+			if (result == DialogResult.Yes)
+			{
+				plane = 0;
+                seats_plane = 0;
+				txt_otkuda_tic.Clear();
+				txt_kuda_tic.Clear();
+				txt_kogda_tic.Clear();
+				txt_obratno_tic.Clear();
+				txt_gate_tic.Clear();
+				txt_users_tic.Clear();
+                name_tic_txt.Clear();
+                txt_seat_tic.Clear();
+                txt_users_tic.Clear();
+                txt_aviacompany_tic.Clear();
+                this.Close();
+			}
+		}
+
+        private void btn_send_email_Click(object sender, EventArgs e)
+        {
+            insert_ticket();
+            btn_otmena.Hide();
+            btn_send_email.Hide();
+
+            var ctrl = this;
+            Bitmap bmp1 = new Bitmap(ctrl.Width, ctrl.Height);
+            ctrl.DrawToBitmap(bmp1, new Rectangle(Point.Empty, bmp1.Size));
+            bmp1.Save(@"C:\Users\USER\Pictures\email_tic\"+Menu.fio_passager+".png", System.Drawing.Imaging.ImageFormat.Png);
+            pictureBox1.Image = bmp1;
+            print();
+
+            this.Close();
+        }
+
+        public void print()
+        {
+            System.Drawing.Printing.PrintDocument Document = new System.Drawing.Printing.PrintDocument();
+            Document.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(Document_PrintPage);
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                Document.Print();
+            }
+        }
+        void Document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(new Bitmap(@"C:\Users\USER\Pictures\email_tic\tic1"+Menu.fio_passager+".png"), new Point(0, 0)); //Картинка на печать
+        }
+
     }
 }
+

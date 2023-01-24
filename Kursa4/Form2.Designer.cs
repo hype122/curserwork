@@ -35,6 +35,7 @@ namespace Kursa4
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.search = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -45,6 +46,7 @@ namespace Kursa4
             this.reg_fio_passager = new System.Windows.Forms.TextBox();
             this.reg_pass_lbl = new System.Windows.Forms.Label();
             this.search_pass_panel = new System.Windows.Forms.Panel();
+            this.btn_choise_passager = new System.Windows.Forms.Button();
             this.pasport_pass = new System.Windows.Forms.MaskedTextBox();
             this.seacrh_pass_lbl = new System.Windows.Forms.Label();
             this.search_fio_pass = new System.Windows.Forms.TextBox();
@@ -56,6 +58,8 @@ namespace Kursa4
             this.kuda = new System.Windows.Forms.TextBox();
             this.otkuda = new System.Windows.Forms.TextBox();
             this.trip_page = new System.Windows.Forms.TabPage();
+            this.lbl_search_city = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_grid_kuda = new System.Windows.Forms.TextBox();
             this.btn_grid_accept = new System.Windows.Forms.Button();
             this.btn_grid_search = new System.Windows.Forms.Button();
@@ -65,7 +69,9 @@ namespace Kursa4
             this.kuda_grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kogda_grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.obratno_grid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profile_page = new System.Windows.Forms.TabPage();
+            this.exit_btn = new System.Windows.Forms.Button();
             this.phone_lbl = new System.Windows.Forms.Label();
             this.surname_lbl = new System.Windows.Forms.Label();
             this.name_lbl = new System.Windows.Forms.Label();
@@ -164,6 +170,7 @@ namespace Kursa4
             this.reg_fio_passager.TabIndex = 1;
             this.reg_fio_passager.Text = "Введите ФИО";
             this.reg_fio_passager.Click += new System.EventHandler(this.reg_fio_passager_Click);
+            this.reg_fio_passager.Leave += new System.EventHandler(this.reg_fio_passager_Leave);
             // 
             // reg_pass_lbl
             // 
@@ -177,6 +184,7 @@ namespace Kursa4
             // 
             // search_pass_panel
             // 
+            this.search_pass_panel.Controls.Add(this.btn_choise_passager);
             this.search_pass_panel.Controls.Add(this.pasport_pass);
             this.search_pass_panel.Controls.Add(this.seacrh_pass_lbl);
             this.search_pass_panel.Controls.Add(this.search_fio_pass);
@@ -186,6 +194,17 @@ namespace Kursa4
             this.search_pass_panel.Name = "search_pass_panel";
             this.search_pass_panel.Size = new System.Drawing.Size(366, 369);
             this.search_pass_panel.TabIndex = 4;
+            // 
+            // btn_choise_passager
+            // 
+            this.btn_choise_passager.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_choise_passager.Location = new System.Drawing.Point(128, 280);
+            this.btn_choise_passager.Name = "btn_choise_passager";
+            this.btn_choise_passager.Size = new System.Drawing.Size(75, 23);
+            this.btn_choise_passager.TabIndex = 6;
+            this.btn_choise_passager.Text = "Выбрать";
+            this.btn_choise_passager.UseVisualStyleBackColor = true;
+            this.btn_choise_passager.Click += new System.EventHandler(this.btn_choise_passager_Click);
             // 
             // pasport_pass
             // 
@@ -207,7 +226,7 @@ namespace Kursa4
             // 
             // search_fio_pass
             // 
-            this.search_fio_pass.Location = new System.Drawing.Point(91, 205);
+            this.search_fio_pass.Location = new System.Drawing.Point(78, 205);
             this.search_fio_pass.Name = "search_fio_pass";
             this.search_fio_pass.ReadOnly = true;
             this.search_fio_pass.Size = new System.Drawing.Size(165, 23);
@@ -226,11 +245,12 @@ namespace Kursa4
             // 
             // search_passport_pass
             // 
-            this.search_passport_pass.Location = new System.Drawing.Point(91, 176);
+            this.search_passport_pass.Location = new System.Drawing.Point(78, 176);
             this.search_passport_pass.Name = "search_passport_pass";
             this.search_passport_pass.ReadOnly = true;
             this.search_passport_pass.Size = new System.Drawing.Size(165, 23);
             this.search_passport_pass.TabIndex = 2;
+            this.search_passport_pass.TextChanged += new System.EventHandler(this.search_passport_pass_TextChanged);
             // 
             // search_page
             // 
@@ -255,6 +275,7 @@ namespace Kursa4
             this.dateTime_obratno.Size = new System.Drawing.Size(100, 23);
             this.dateTime_obratno.TabIndex = 13;
             this.dateTime_obratno.Click += new System.EventHandler(this.dateTime_obratno_Click);
+            this.dateTime_obratno.Leave += new System.EventHandler(this.dateTime_obratno_Leave);
             // 
             // dateTime_kogda
             // 
@@ -264,6 +285,7 @@ namespace Kursa4
             this.dateTime_kogda.TabIndex = 12;
             this.dateTime_kogda.Click += new System.EventHandler(this.dateTime_kogda_Click);
             this.dateTime_kogda.TextChanged += new System.EventHandler(this.dateTime_kogda_TextChanged);
+            this.dateTime_kogda.Leave += new System.EventHandler(this.dateTime_kogda_Leave);
             // 
             // kuda
             // 
@@ -272,6 +294,7 @@ namespace Kursa4
             this.kuda.Size = new System.Drawing.Size(100, 23);
             this.kuda.TabIndex = 11;
             this.kuda.Click += new System.EventHandler(this.kuda_Click_1);
+            this.kuda.Leave += new System.EventHandler(this.kuda_Leave);
             // 
             // otkuda
             // 
@@ -283,6 +306,8 @@ namespace Kursa4
             // 
             // trip_page
             // 
+            this.trip_page.Controls.Add(this.lbl_search_city);
+            this.trip_page.Controls.Add(this.label1);
             this.trip_page.Controls.Add(this.txt_grid_kuda);
             this.trip_page.Controls.Add(this.btn_grid_accept);
             this.trip_page.Controls.Add(this.btn_grid_search);
@@ -294,9 +319,27 @@ namespace Kursa4
             this.trip_page.Text = "Рейсы";
             this.trip_page.UseVisualStyleBackColor = true;
             // 
+            // lbl_search_city
+            // 
+            this.lbl_search_city.AutoSize = true;
+            this.lbl_search_city.ForeColor = System.Drawing.Color.Black;
+            this.lbl_search_city.Location = new System.Drawing.Point(8, 35);
+            this.lbl_search_city.Name = "lbl_search_city";
+            this.lbl_search_city.Size = new System.Drawing.Size(85, 15);
+            this.lbl_search_city.TabIndex = 5;
+            this.lbl_search_city.Text = "Введите город";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.TabIndex = 4;
+            // 
             // txt_grid_kuda
             // 
-            this.txt_grid_kuda.Location = new System.Drawing.Point(19, 29);
+            this.txt_grid_kuda.Location = new System.Drawing.Point(123, 28);
             this.txt_grid_kuda.Name = "txt_grid_kuda";
             this.txt_grid_kuda.Size = new System.Drawing.Size(100, 23);
             this.txt_grid_kuda.TabIndex = 3;
@@ -304,7 +347,7 @@ namespace Kursa4
             // btn_grid_accept
             // 
             this.btn_grid_accept.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_grid_accept.Location = new System.Drawing.Point(323, 29);
+            this.btn_grid_accept.Location = new System.Drawing.Point(372, 27);
             this.btn_grid_accept.Name = "btn_grid_accept";
             this.btn_grid_accept.Size = new System.Drawing.Size(75, 23);
             this.btn_grid_accept.TabIndex = 2;
@@ -315,7 +358,7 @@ namespace Kursa4
             // btn_grid_search
             // 
             this.btn_grid_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_grid_search.Location = new System.Drawing.Point(188, 28);
+            this.btn_grid_search.Location = new System.Drawing.Point(291, 28);
             this.btn_grid_search.Name = "btn_grid_search";
             this.btn_grid_search.Size = new System.Drawing.Size(75, 23);
             this.btn_grid_search.TabIndex = 1;
@@ -333,7 +376,8 @@ namespace Kursa4
             this.otkuda_grid,
             this.kuda_grid,
             this.kogda_grid,
-            this.obratno_grid});
+            this.obratno_grid,
+            this.price});
             this.trip_grid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.trip_grid.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.trip_grid.Location = new System.Drawing.Point(0, 70);
@@ -387,8 +431,17 @@ namespace Kursa4
             this.obratno_grid.Name = "obratno_grid";
             this.obratno_grid.ReadOnly = true;
             // 
+            // price
+            // 
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.price.DefaultCellStyle = dataGridViewCellStyle6;
+            this.price.HeaderText = "Цена";
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            // 
             // profile_page
             // 
+            this.profile_page.Controls.Add(this.exit_btn);
             this.profile_page.Controls.Add(this.phone_lbl);
             this.profile_page.Controls.Add(this.surname_lbl);
             this.profile_page.Controls.Add(this.name_lbl);
@@ -407,6 +460,17 @@ namespace Kursa4
             this.profile_page.Text = "Профиль";
             this.profile_page.UseVisualStyleBackColor = true;
             this.profile_page.Enter += new System.EventHandler(this.profile_Enter);
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.BackColor = System.Drawing.Color.Transparent;
+            this.exit_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exit_btn.Location = new System.Drawing.Point(339, 267);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(75, 23);
+            this.exit_btn.TabIndex = 12;
+            this.exit_btn.Text = "Выйти";
+            this.exit_btn.UseVisualStyleBackColor = false;
             // 
             // phone_lbl
             // 
@@ -535,8 +599,6 @@ namespace Kursa4
         private TabControl tabControl1;
         private TabPage search_page;
         private TabPage profile_page;
-        private TextBox surname_box_auth;
-        private TextBox name_box_auth;
         private TextBox login_box_auth;
         private TextBox phone_box_auth;
 		private TabPage trip_page;
@@ -561,15 +623,22 @@ namespace Kursa4
         private TextBox search_passport_pass;
         private TextBox reg_fio_passager;
         private Button reg_btn_passager;
-        private DataGridViewTextBoxColumn id_grid;
-        private DataGridViewTextBoxColumn otkuda_grid;
-        private DataGridViewTextBoxColumn kuda_grid;
-        private DataGridViewTextBoxColumn kogda_grid;
-        private DataGridViewTextBoxColumn obratno_grid;
         private MaskedTextBox pasport_pass;
         private MaskedTextBox reg_passport_passager;
         private TextBox txt_grid_kuda;
         private Button btn_grid_accept;
         private Button btn_grid_search;
+		private Button btn_choise_passager;
+		private Label lbl_search_city;
+		private Label label1;
+		private Button exit_btn;
+        private TextBox surname_box_auth;
+        private TextBox name_box_auth;
+        private DataGridViewTextBoxColumn id_grid;
+        private DataGridViewTextBoxColumn otkuda_grid;
+        private DataGridViewTextBoxColumn kuda_grid;
+        private DataGridViewTextBoxColumn kogda_grid;
+        private DataGridViewTextBoxColumn obratno_grid;
+        private DataGridViewTextBoxColumn price;
     }
 }
