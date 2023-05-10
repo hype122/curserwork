@@ -1,4 +1,4 @@
-﻿namespace Kursa4
+namespace Kursa4
 {
 	partial class count_bag
 	{
@@ -31,6 +31,7 @@
             this.accept_btn = new System.Windows.Forms.Button();
             this.kg_baggage = new System.Windows.Forms.NumericUpDown();
             this.lbl_kg = new System.Windows.Forms.Label();
+            this.price_bag = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kg_baggage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +41,7 @@
             this.accept_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.accept_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.accept_btn.Font = new System.Drawing.Font("Sitka Text", 9.749999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.accept_btn.Location = new System.Drawing.Point(48, 93);
+            this.accept_btn.Location = new System.Drawing.Point(48, 122);
             this.accept_btn.Name = "accept_btn";
             this.accept_btn.Size = new System.Drawing.Size(95, 30);
             this.accept_btn.TabIndex = 3;
@@ -65,6 +66,7 @@
             0,
             0,
             -2147483648});
+            this.kg_baggage.ValueChanged += new System.EventHandler(this.kg_baggage_ValueChanged);
             // 
             // lbl_kg
             // 
@@ -75,12 +77,21 @@
             this.lbl_kg.TabIndex = 5;
             this.lbl_kg.Text = "Введите вес багажа:";
             // 
+            // price_bag
+            // 
+            this.price_bag.Location = new System.Drawing.Point(48, 93);
+            this.price_bag.Name = "price_bag";
+            this.price_bag.ReadOnly = true;
+            this.price_bag.Size = new System.Drawing.Size(95, 23);
+            this.price_bag.TabIndex = 6;
+            // 
             // count_bag
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(198, 181);
+            this.Controls.Add(this.price_bag);
             this.Controls.Add(this.lbl_kg);
             this.Controls.Add(this.kg_baggage);
             this.Controls.Add(this.accept_btn);
@@ -100,5 +111,6 @@
 		private Button accept_btn;
         private NumericUpDown kg_baggage;
         private Label lbl_kg;
+        private TextBox price_bag;
     }
 }
