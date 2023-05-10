@@ -1,0 +1,322 @@
+C:\Users\Студент\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\Студент\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\Студент\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\Студент\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\Студент\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\source\repos\Kursa4\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\source\repos\Kursa4\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\USER\source\repos\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\source\repos\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\Студент\Desktop\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\Documents\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.ticket.resources
+C:\Users\Студент\Desktop\Что то тип курсовой\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\Студент\Desktop\Что то тип курсовой\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\Desktop\Что то тип курсовой\Kursa16\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\Студент\Desktop\Что то тип курсовой\Kursa16\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.ticket.resources
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\Source\Repos\curserwork\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.ticket.resources
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\Студент\Source\Repos\curs12.11\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.ticket.resources
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\Source\Repos\curserwork12.11dom\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.ticket.resources
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\Source\Repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
+C:\Users\USER\source\repos\13.11 price\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form_for_manager.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\Kursa4.exe
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\Kursa4.deps.json
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\Kursa4.runtimeconfig.json
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.count_bag.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form1.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.Menu.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.Form_for_manager.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.Properties.Resources.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.Reg_form.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.ticket.resources
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.GenerateResource.cache
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfoInputs.cache
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.AssemblyInfo.cs
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.csproj.CopyComplete
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\refint\Kursa4.dll
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.pdb
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\Kursa4.genruntimeconfig.cache
+C:\Users\USER\Source\Repos\curserwork1\Kursa4\obj\Debug\net6.0-windows\ref\Kursa4.dll
