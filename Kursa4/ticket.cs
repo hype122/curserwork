@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -37,7 +37,7 @@ namespace Kursa4
             obratno_tic_lbl.BackColor = Color.Transparent; //obratno_tic_lbl.ForeColor = Color.Transparent;
             otkuda_tic_lbl.BackColor = Color.Transparent; //otkuda_tic_lbl.ForeColor = Color.Transparent;
             Когда.BackColor = Color.Transparent; //Когда.ForeColor = Color.Transparent;
-            lbl_users_tic.BackColor = Color.Transparent; //lbl_users_tic.ForeColor = Color.Transparent;
+            lbl_price_tic.BackColor = Color.Transparent; //lbl_users_tic.ForeColor = Color.Transparent;
             
 			trip_data();// получаемя данные рейса
             plane_avia_and_seatsCount();// получаем данные авиакопаний и места
@@ -108,14 +108,14 @@ namespace Kursa4
         {
             Class1 class1 = new Class1();
             class1.openConnection();
-            MySqlCommand command = new MySqlCommand("SELECT name, surname FROM users WHERE idusers = @id ", class1.getConn());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM trip WHERE idtrip = @id ", class1.getConn());
             command.Parameters.Add("@id", MySqlDbType.Int64).Value = Form1.id_user;
 
             MySqlDataReader DR = command.ExecuteReader();
 
             while (DR.Read())
             {
-                txt_users_tic.Text = DR[1].ToString() + " " + DR[0].ToString();
+                txt_price_tic.Text = DR[7].ToString() + count_bag.price_baggage;
                 
             }
 
@@ -237,10 +237,10 @@ namespace Kursa4
 				txt_kogda_tic.Clear();
 				txt_obratno_tic.Clear();
 				txt_gate_tic.Clear();
-				txt_users_tic.Clear();
+				txt_price_tic.Clear();
                 name_tic_txt.Clear();
                 txt_seat_tic.Clear();
-                txt_users_tic.Clear();
+                txt_price_tic.Clear();
                 txt_aviacompany_tic.Clear();
                 this.Close();
 			}
