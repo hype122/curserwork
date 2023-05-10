@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,7 @@ namespace Kursa4
             this.Activate();
 		}
 
+		static public string price_baggage;
 		static public int choised_id_baggage;
 
 		
@@ -82,10 +84,14 @@ namespace Kursa4
 
             class1.closeConnection();
         }
-		
-		
-            
-        
-		
+
+		private void kg_baggage_ValueChanged(object sender, EventArgs e)
+		{
+            if (kg_baggage.Value >= 5) { price_baggage = " + 500"; }
+            if (kg_baggage.Value >= 10) { price_baggage = " + 1000"; }
+            if (kg_baggage.Value >= 15) { price_baggage = " + 1500"; }
+            if (kg_baggage.Value >= 20) { price_baggage = " + 2500"; }
+            price_bag.Text = price_baggage;
+        }
 	}
 }
