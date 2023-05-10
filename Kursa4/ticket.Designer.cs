@@ -1,4 +1,4 @@
-﻿namespace Kursa4
+namespace Kursa4
 {
     partial class ticket
     {
@@ -50,8 +50,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_otmena = new System.Windows.Forms.Button();
             this.btn_send_email = new System.Windows.Forms.Button();
-            this.lbl_users_tic = new System.Windows.Forms.Label();
-            this.txt_users_tic = new System.Windows.Forms.TextBox();
+            this.lbl_price_tic = new System.Windows.Forms.Label();
+            this.txt_price_tic = new System.Windows.Forms.TextBox();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -248,22 +248,22 @@
             this.btn_send_email.UseVisualStyleBackColor = true;
             this.btn_send_email.Click += new System.EventHandler(this.btn_send_email_Click);
             // 
-            // lbl_users_tic
+            // lbl_price_tic
             // 
-            this.lbl_users_tic.AutoSize = true;
-            this.lbl_users_tic.Location = new System.Drawing.Point(623, 354);
-            this.lbl_users_tic.Name = "lbl_users_tic";
-            this.lbl_users_tic.Size = new System.Drawing.Size(46, 15);
-            this.lbl_users_tic.TabIndex = 24;
-            this.lbl_users_tic.Text = "Кассир";
+            this.lbl_price_tic.AutoSize = true;
+            this.lbl_price_tic.Location = new System.Drawing.Point(623, 354);
+            this.lbl_price_tic.Name = "lbl_price_tic";
+            this.lbl_price_tic.Size = new System.Drawing.Size(35, 15);
+            this.lbl_price_tic.TabIndex = 24;
+            this.lbl_price_tic.Text = "Цена";
             // 
-            // txt_users_tic
+            // txt_price_tic
             // 
-            this.txt_users_tic.Location = new System.Drawing.Point(717, 346);
-            this.txt_users_tic.Name = "txt_users_tic";
-            this.txt_users_tic.ReadOnly = true;
-            this.txt_users_tic.Size = new System.Drawing.Size(144, 23);
-            this.txt_users_tic.TabIndex = 25;
+            this.txt_price_tic.Location = new System.Drawing.Point(717, 346);
+            this.txt_price_tic.Name = "txt_price_tic";
+            this.txt_price_tic.ReadOnly = true;
+            this.txt_price_tic.Size = new System.Drawing.Size(144, 23);
+            this.txt_price_tic.TabIndex = 25;
             // 
             // printDialog1
             // 
@@ -278,8 +278,8 @@
             this.CancelButton = this.btn_otmena;
             this.ClientSize = new System.Drawing.Size(984, 461);
             this.ControlBox = false;
-            this.Controls.Add(this.txt_users_tic);
-            this.Controls.Add(this.lbl_users_tic);
+            this.Controls.Add(this.txt_price_tic);
+            this.Controls.Add(this.lbl_price_tic);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_gate);
@@ -335,8 +335,8 @@
         private Panel panel2;
 		private Button btn_otmena;
 		private Button btn_send_email;
-		private Label lbl_users_tic;
-		private TextBox txt_users_tic;
+		private Label lbl_price_tic;
+		private TextBox txt_price_tic;
 		private PrintDialog printDialog1;
 	}
 }
